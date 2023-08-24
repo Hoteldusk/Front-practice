@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: skyblue;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 20px;
+}
+td,
+th {
+  border-bottom: 1px solid #aaa;
+}
+
+.options {
+  margin-top: 20px;
+}
+
+.options a {
+  float: left;
+  color: cornflowerblue;
+}
+
+.options button {
+  float: right;
+  padding: 20px 20px;
+  border-radius: 5px;
+  background-color: navy;
+  border: none;
+  color: white;
+}
+
+.options button:hover {
+  background-color: cornflowerblue;
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.img_title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+td * {
+  margin-left: 70px;
+}
+
+.amount {
+  float: right;
+  margin-right: 90px;
+}

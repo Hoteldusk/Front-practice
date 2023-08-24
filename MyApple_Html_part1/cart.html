@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나의 홈페이지</title>
+    <link href="./css/cart.css" rel="stylesheet" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <!-- span 태그 display:inline 속성을 가지고있음(항상 옆으로 채워지는 폭과 너비가 없는 요소) -->
+
+    <!-- vertical-align (세로정렬)속성 실험 table혹은 inline에서 사용-->
+
+    <div>
+      <img
+        style="vertical-align: middle"
+        src="https://mdn.mozillademos.org/files/12245/frame_image.svg"
+        width="100"
+        height="100"
+      />
+      <span style="vertical-align: middle"
+        >image with a default alignment.</span
+      >
+    </div>
+
+    <!-- 일반 div로 표 만들기 -->
+    <div style="display: table">
+      <div style="display: table-row">
+        <div style="display: table-cell">1</div>
+        <div style="display: table-cell">2</div>
+      </div>
+    </div>
+  </body>
+</html>

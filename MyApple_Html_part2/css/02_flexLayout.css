@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  /* flex속성부여 default : 가로배치 */
+  display: flex;
+  height: 500px;
+  background-color: #ccc;
+
+  /* 가운데 정렬 하고싶다면? */
+  /* justify-content: center; */
+
+  /* 좌측 정렬 하고싶다면? */
+  /* justify-content: start; */
+
+  /* 우측 정렬 하고싶다면? */
+  /* justify-content: end; */
+
+  /* flex 방향설정 세로 */
+  /* flex-direction: column; */
+
+  /* flex 방향설정 가로 */
+  /* flex-direction: row; */
+
+  /* width 크면 밑으로 보내고 싶을때 */
+  /* flex-wrap: wrap; */
+
+  /* flex 이용시 상하정렬 */
+  align-items: center;
+}
+
+.flex-item {
+  /* width: 700px; */
+  /* width: 100%; */
+  /* 실제로는 100% 가 아님, 최대한 100%가 되게끔 하는것*/
+
+  /* 박스크기 비율로 설정가능*/
+  flex-grow: 1;
+  height: 100px;
+  background-color: grey;
+  margin: 5px;
+}
+
+.flex-item.second-box {
+  flex-grow: 3;
+}

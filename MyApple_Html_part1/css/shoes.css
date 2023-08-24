@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/shoes.jpg);
+
+  /* 100% or px or cover(잘려도 상관없으니 배경채워라) or contain(배경잘리면 안된다) */
+  background-size: cover;
+
+  /* background 반복속성 없앨경우 */
+  background-repeat: no-repeat;
+
+  /* 배경 위치 조정가능 */
+  background-position: center;
+
+  /* 스크롤시 배경 위치 조정가능 */
+  /* background-attachment: fixed; */
+
+  /* 박스에 보정입히기 brightness, seturate 등*/
+  /* filter: brightness(70%); */
+
+  padding: 1px;
+
+  position: relative;
+}
+
+.main-title {
+  font-size: 40px;
+  color: white;
+
+  /* margin collapse effect bug */
+  /* margin-top: 100px; */
+  /* main-background에 padding: 1px 주면 해결 */
+  margin-top: 100px;
+  text-align: center;
+}
+
+.content {
+  font-size: 25px;
+  color: white;
+  margin-top: 40px;
+  margin-left: 30px;
+  text-align: center;
+}
+
+.button-div button {
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 80px;
+
+  background-color: #eee;
+  border-radius: 5px;
+  border: none;
+
+  /* position: relative 속성 부여시 좌표이동가능, 공중에 뜸, 내원래 위치가 기준*/
+  position: relative;
+  top: 50px;
+  /* position: static : 좌표이동x */
+  /* position: fixed : 현재 화면이 기준 */
+  /* position: absolute : 내 부모 태그 중에 relative 가진 부모 기준 */
+  /* absolute 응용하면 태그끼리 달라붙게할수있음 */
+
+  /* absolute 가운데정렬 하는법 */
+  /* left: 0;
+  right: 0;
+  margin: auto;
+  width: 적당히길게; */
+}
+
+.button-div button:hover {
+  cursor: pointer;
+  background-color: #aaa;
+}
+
+.example-box {
+  position: absolute;
+  bottom: -120px;
+
+  /* position: relative;
+  top: -40px; */
+
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  width: 60%;
+  /*최대 width 제한 가능 pc에서 사용시 width %와 같이쓰는걸 권장*/
+  max-width: 600px;
+
+  padding: 30px;
+  background-color: #eee;
+
+  text-align: center;
+}
+
+.example-box.second {
+  position: absolute;
+  bottom: -440px;
+
+  /* 
+  boxsizing: borderbox 안하면  padding, border 포함을 안해서 max-width가 content만 포함하게 되서 어려워짐
+  따라서 borderbox로 처음에 초기화를 해놓고 하자 기본값은 content-box  
+  */
+  padding: 50px;
+}
+
+.ex-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.ex-content {
+  color: grey;
+}

@@ -1,0 +1,42 @@
+/* 사용자pc에 폰트없어도 적용시키는 코드(최상단 위치해야함) 선언해놓으면 원하는 곳에서 사용하면됨*/
+/* @font-face {
+  font-family: "font이름";
+  src: url("폰트경로/폰트파일.ttf");
+} */
+/* 폰트파일(ttf)는 용량이 너무커서 페이지 렌더링이 오래걸릴수있음 따라서 woff를 쓰기를 권장*/
+@font-face {
+  font-family: "myfont";
+  src: url("../font/NanumSquareR.woff");
+  font-weight: bold;
+}
+
+/* 구글 폰트에서 링크로 적용시키는법 1. html에선 link사용 2. css 에선 @import 사용*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* body {
+  폰트 여러개 지정가능 앞의 것이 적용 안되면 뒤가 적용됨 이 방식은 사용자pc에 폰트가 설치되어 있어야함
+  font-family: "gulim", "dotum";
+  font-family: "myfont";
+} */
+
+div {
+  font-size: 50px;
+}
+
+.font1 {
+  font-family: "myfont";
+}
+
+.font2 {
+  font-family: "gulim";
+}
+
+/* 폰트를 안티앨리어싱 하려면 살짝회전시키면됨 */
+p {
+  transform: rotate(0.03deg);
+}

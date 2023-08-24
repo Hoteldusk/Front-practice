@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  background-color: #c2d3de;
+}
+
+.cart-background {
+  width: 70%;
+  margin: auto;
+  padding: 30px;
+  height: 100%;
+}
+
+/* table 태그에 border-radius가 안먹을 때 1. 
+
+table {
+  border-collapse : collapse;
+  border-spacing : 0;
+}
+
+(왼쪽위에있는 td) {
+  border-top-left-radius : 5px;
+} */
+
+/* table 태그에 border-radius가 안먹을 때 2. 
+
+table {
+  border-collapse : collapse;
+  border-radius : 7px;
+  border-style : hidden;
+  box-shadow : 0 0 0 1px #666;
+} */
+table {
+  border-collapse: collapse;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-table {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 15px;
+  border-bottom: 1px solid #c2d3de;
+}
+
+.cart-table th:nth-child(2) {
+  width: 300px;
+}
+
+.options {
+  margin-top: 30px;
+  margin-left: auto;
+}
+
+.options button {
+  padding: 15px 20px;
+  background-color: coral;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+/* pseudo-class 순서가 중요 */
+.options button:hover {
+  background-color: chocolate;
+}
+.options button:focus {
+  background-color: gray;
+}
+.options button:active {
+  background-color: coral;
+}
+
+.options a {
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* 방문전 */
+.options a:link {
+  color: aqua;
+}
+
+.options a:visited {
+  color: black;
+}
