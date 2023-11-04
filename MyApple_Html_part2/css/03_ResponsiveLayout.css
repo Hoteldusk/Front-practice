@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.test {
+    background-color: gray;
+    font-size: 60px;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 브라우저 폭에 비례 viewport width, height*/
+    /* width: 50vw; */
+    /* height: 50vh; */
+
+    /* html 기본 폰트의 10배 폰트가 16px로 설정될경우 10rem은 160px임*/
+    /* width: 10rem; */
+
+    /* 자신 폰트 사이즈의 10배 */
+    /* width: 10em; */
+}
+
+/* 반응형에 따라서 폰트 사이즈를 줄이고싶다면? meida query 보통 css 최하단에 위치 */
+/* 
+큰 사이즈 부터 작은사이즈 순서대로 작성 보통 1200px 이하 테블릿 768px 이하 모바일
+*/
+@media screen and (max-width: 1200px) {
+    .test {
+        font-size: 40px;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .test {
+        font-size: 40px;
+        background-color: coral;
+    }
+}

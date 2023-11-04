@@ -107,7 +107,7 @@
   /* 
     boxsizing: borderbox 안하면  padding, border 포함을 안해서 max-width가 content만 포함하게 되서 어려워짐
     따라서 borderbox로 처음에 초기화를 해놓고 하자 기본값은 content-box  
-    */
+  */
   padding: 50px;
 }
 
@@ -144,4 +144,22 @@
 
 .navList.blank {
   flex: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-title {
+    font-size: 10px;
+  }
 }
